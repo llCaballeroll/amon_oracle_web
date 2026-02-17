@@ -3,88 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amon: El Oráculo Místico. Descubre tu destino, colecciona entes pixel art y revela la verdad con tu voz.">
-    <meta name="keywords" content="Oráculo, Tarot, Pixel Art, Gacha, Predicción, App, Juego Casual">
+    <title>Amon | The Mystic Oracle</title>
+    <meta name="description" content="Amon: El Oráculo Místico. Descubre tu destino con lecturas de voz, colecciona entes pixel art y revela la verdad en esta experiencia esotérica digital.">
+    <meta name="keywords" content="Oráculo, Tarot, Pixel Art, Gacha, Predicción, App, Juego Casual, Místico">
     <meta name="author" content="Luis Angel Caballero Jardon">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://llcaballeroll.github.io/amon_oracle_web/">
     <meta property="og:title" content="Amon: The Mystic Oracle">
     <meta property="og:description" content="¿Te atreves a conocer la verdad? Descarga Amon y deja que el oráculo guíe tu destino.">
-    <meta property="og:image" content="assets/icon.png">
+    <meta property="og:image" content="assets/img/icon.png">
 
-    <title>Amon | The Mystic Oracle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+
 </head>
 <body>
 
-    <header>
-        <div class="logo">AMON</div>
-        <nav>
-            <ul>
-                <li><a href="#features">Características</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#download">Descargar</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AMON</a>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">El Oráculo</a>
+                <a href="#gallery" class="nav-link">Visiones</a>
+                <a href="presskit.html" class="nav-link">Press Kit</a>
+                <a href="https://play.google.com/store/apps/details?id=com.luiscaballero.amonoracle&pcampaignid=web_share" target="_blank" class="nav-cta">Invocar</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <h1>El destino.<br><span class="text-gradient">Revelado por tu voz.</span></h1>
+                <p class="hero-subtitle">Una experiencia mística que combina el arte de la adivinación con estética Pixel Art retro. Pregunta, escucha y colecciona la verdad.</p>
+                
+                <div class="hero-actions">
+                    <a href="https://play.google.com/store/apps/details?id=com.luiscaballero.amonoracle&pcampaignid=web_share" target="_blank" class="btn btn-primary">
+                        Descargar en Google Play
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image fade-in-up delay-1">
+                <div class="phone-mockup">
+                    <img src="assets/img/1.png" alt="Amon App Gameplay" class="mockup-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>AMON: <span class="highlight">THE MYSTIC ORACLE</span></h1>
-            <p class="subtitle">Descubre tu destino a través de la voz y el arte retro.</p>
-            <br>
-            <a href="https://play.google.com/store/apps/details?id=com.tu_organizacion.tu_app" class="cta-button">
-                Descargar en Google Play
-            </a>
-            <p style="margin-top: 15px; font-size: 0.8rem; color: #666;">*Disponible para Android 10+</p>
-        </div>
-    </section>
-
-    <section class="features" id="features">
-        <h2 class="section-title">El Destino en tus Manos</h2>
-        <div class="grid">
-            <div class="card">
-                <span class="icon">🔮</span>
-                <h3>Oráculo de Voz</h3>
-                <p>Usa el micrófono para hacer tus preguntas. Amon analizará tu energía vocal y te dará una respuesta directa.</p>
+    <section id="features" class="section-dark">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>El Poder Oculto</h2>
+                <p>Herramientas esotéricas digitales para el buscador moderno.</p>
             </div>
-            <div class="card">
-                <span class="icon">🃏</span>
-                <h3>Colecciona Entes</h3>
-                <p>Desbloquea personalidades únicas como El Bromista, La Tóxica o El Zen. Cada uno con su propio estilo.</p>
-            </div>
-            <div class="card">
-                <span class="icon">📦</span>
-                <h3>Tienda Mística</h3>
-                <p>Abre cajas misteriosas (Gacha) para conseguir skins, bolas mágicas y fondos exclusivos.</p>
-            </div>
-            <div class="card">
-                <span class="icon">👾</span>
-                <h3>Pixel Art Retro</h3>
-                <p>Disfruta de una estética visual única inspirada en los juegos clásicos, con efectos modernos.</p>
+            
+            <div class="features-grid">
+                <div class="card glass fade-in-up delay-1">
+                    <div class="card-icon">🔮</div>
+                    <h3>Oráculo de Voz</h3>
+                    <p>Tu voz es la llave. Amon analiza la vibración de tus preguntas para ofrecer respuestas directas y reveladoras.</p>
+                </div>
+                <div class="card glass fade-in-up delay-2">
+                    <div class="card-icon">🃏</div>
+                    <h3>Entes Coleccionables</h3>
+                    <p>Desbloquea personalidades únicas como El Bromista o La Tóxica. Cada ente interpreta el destino a su manera.</p>
+                </div>
+                <div class="card glass fade-in-up delay-3">
+                    <div class="card-icon">📦</div>
+                    <h3>Tienda Mística</h3>
+                    <p>El azar también es destino. Abre cajas misteriosas para obtener skins, orbes de poder y fondos exclusivos.</p>
+                </div>
+                <div class="card glass fade-in-up delay-4">
+                    <div class="card-icon">👾</div>
+                    <h3>Arte Pixel Retro</h3>
+                    <p>Una estética visual hipnótica que fusiona el misticismo antiguo con la nostalgia de los 8 bits.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="gallery" id="gallery">
-        <h2 class="section-title">Capturas de Pantalla</h2>
-        <div class="gallery-container">
-            <div class="screenshot-placeholder">Pantalla Oráculo</div>
-            <div class="screenshot-placeholder">Tienda Gacha</div>
-            <div class="screenshot-placeholder">Colección</div>
-            <div class="screenshot-placeholder">Resultado</div>
+    <section id="gallery" class="section-light">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Visiones del Futuro</h2>
+                <p>Un vistazo a lo que te espera dentro del círculo.</p>
+            </div>
+            
+            <div class="gallery-grid fade-in-up">
+                <div class="gallery-card">
+                    <img src="assets/img/1.png" alt="Amon App Gameplay" class="mockup-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/img/2.png" alt="Amon App Gameplay" class="mockup-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                </div>
+
+                <div class="gallery-card">
+                    <img src="assets/img/3.png" alt="Amon App Gameplay" class="mockup-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                </div>
+            </div>
+
+            <div class="gameplay-wide fade-in-up">
+                <div class="wide-card">
+                    <img src="assets/img/4_5.png" alt="Gameplay Panorámico Acción" loading="lazy">
+                </div>
+                <div class="wide-card">
+                    <img src="assets/img/6_7.png" alt="Gameplay Panorámico Boss" loading="lazy">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <footer id="download">
-        <div class="footer-links">
-            <a href="politica.html">Política de Privacidad</a>
-            <a href="terminosycondiciones.html">Términos y Condiciones</a>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="privacy.html">Política de Privacidad</a>
+                <a href="terms.html">Términos y Condiciones</a>
+                <a href="techspecs.html">Especificaciones Técnicas</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Amon Oracle. Creado por Luis Angel Caballero Jardon.</p>
+                <p class="location">Metepec, Estado de México.</p>
+            </div>
         </div>
-        <p>&copy; 2026 Amon Oracle. Todos los derechos reservados.</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; color: #444;">Desarrollado con Flutter por Luis Angel Caballero Jardon.</p>
     </footer>
 
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

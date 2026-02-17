@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Specs - Amon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+            <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">AMON <span style="font-size: 0.8rem; opacity: 0.7; margin-left: 5px;">| TECH</span></a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-cta">Volver al Inicio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-main">
+        <div class="container">
+            
+            <header class="legal-header">
+                <h1>Especificaciones Técnicas</h1>
+                <p class="legal-date">Arquitectura & Stack Tecnológico v1.1.1</p>
+            </header>
+
+            <section class="section-dark" style="padding-top: 0;">
+                <div class="section-header">
+                    <h2>Core Technology</h2>
+                    <p>Desarrollado con un enfoque híbrido de alto rendimiento.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="card glass">
+                        <div class="card-icon">⚡</div>
+                        <h3>Flutter 3.38.9</h3>
+                        <p>Framework principal para renderizado UI nativo, gestión de estado y navegación multiplataforma.</p>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-icon">🔥</div>
+                        <h3>Flame Engine ^1.35</h3>
+                        <p>Motor de juego 2D integrado para el manejo del loop de juego, partículas y animaciones complejas.</p>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-icon">🧠</div>
+                        <h3>Provider ^6.1</h3>
+                        <p>Arquitectura de inyección de dependencias y gestión de estado reactiva para la lógica de negocio.</p>
+                    </div>
+                    <div class="card glass">
+                        <div class="card-icon">🎙️</div>
+                        <h3>Speech Recognition</h3>
+                        <p>Integración nativa (speech_to_text ^7.3) para análisis de voz en tiempo real y triggering de eventos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container narrow-container" style="margin-top: 4rem;">
+                <article class="legal-card fade-in-up">
+                    <div class="legal-body">
+                        <h2>Librerías & Módulos</h2>
+                        <p>Selección de paquetes optimizados para estabilidad y rendimiento en Android 10+.</p>
+
+                        <h3>Monetización & Analytics</h3>
+                        <ul>
+                            <li><strong>google_mobile_ads ^7.0.0:</strong> Gestión de anuncios intersticiales y recompensados.</li>
+                            <li><strong>in_app_purchase ^3.2.3:</strong> Procesamiento seguro de transacciones digitales (Gacha system).</li>
+                        </ul>
+
+                        <h3>Multimedia & UX</h3>
+                        <ul>
+                            <li><strong>audioplayers ^6.5.1:</strong> Motor de audio para SFX y música ambiental dinámica.</li>
+                            <li><strong>animate_do ^4.2.0:</strong> Micro-animaciones para feedback visual en UI.</li>
+                            <li><strong>flutter_localization ^0.3.3:</strong> Soporte i18n para internacionalización.</li>
+                        </ul>
+
+                        <h3>Utilidades del Sistema</h3>
+                        <ul>
+                            <li><strong>shared_preferences ^2.5.4:</strong> Persistencia de datos local ligera (progreso, unlocks).</li>
+                            <li><strong>url_launcher ^6.3.2:</strong> Gestión de enlaces externos y políticas.</li>
+                            <li><strong>package_info_plus ^9.0.0:</strong> Control de versiones y metadatos del build.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container narrow-container" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2>Arquitectura del Proyecto</h2>
+                    <p>Estructura escalable basada en "Feature-First".</p>
+                </div>
+
+                <article class="legal-card fade-in-up">
+                    <div class="legal-body">
+                        <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.2); font-family: monospace; font-size: 0.9rem; color: #a8a8a8; overflow-x: auto;">
+<pre>
+lib/
+├── main.dart                  # Entry Point & Providers Setup
+├── config/
+│   ├── theme/                 # Paleta de colores y estilos globales
+│   └── routes/                # Mapa de navegación
+├── core/
+│   ├── constants/             # Strings, Assets Paths
+│   └── utils/                 # Helpers (AudioPlayer, Haptic)
+├── data/
+│   ├── datasources/           # Local Storage & API Mockups
+│   └── repositories/          # Implementación de repositorios
+├── domain/
+│   ├── entities/              # Modelos (OracleEntity, Item)
+│   └── usecases/              # Lógica de negocio pura
+└── presentation/
+    ├── widgets/               # Componentes reutilizables (Buttons, Loaders)
+    └── screens/
+        ├── oracle/            # Lógica del Oráculo (Voice/Flame)
+        ├── shop/              # Gacha System & IAP
+        ├── collection/        # Grid de Entes desbloqueados
+        └── settings/          # Configuración y Legal
+</pre>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
+                            La arquitectura separa la capa de presentación (Flutter Widgets) de la lógica del juego (Flame Components) y la capa de datos, permitiendo escalabilidad y testeo unitario eficiente.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-copy">
+                <p>&copy; 2026 Amon Oracle. Todos los derechos reservados.</p>
+                <p style="font-size: 0.8rem; color: #444; margin-top: 5px;">Built with Flutter & Flame.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                el.classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>
