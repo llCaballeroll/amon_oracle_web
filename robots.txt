@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://llcaballeroll.github.io/amon_oracle_web/sitemap.xml

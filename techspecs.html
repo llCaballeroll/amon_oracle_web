@@ -1,157 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Specs - Amon</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ficha técnica · AMON</title>
+    <meta name="description" content="Requisitos, contenido y tecnología de AMON: The Mystic Oracle (Flutter + Flame). Android 7.0+ y iOS 15+.">
+    <meta name="theme-color" content="#07040d">
+    <link rel="canonical" href="https://llcaballeroll.github.io/amon_oracle_web/techspecs.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AMON · The Mystic Oracle">
+    <meta property="og:title" content="Ficha técnica · AMON">
+    <meta property="og:url" content="https://llcaballeroll.github.io/amon_oracle_web/techspecs.html">
+    <meta property="og:image" content="https://llcaballeroll.github.io/amon_oracle_web/assets/img/og-image.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
-            <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
-    <link rel="apple-touch-icon" href="assets/img/icon.png">
-    
+    <script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">AMON <span style="font-size: 0.8rem; opacity: 0.7; margin-left: 5px;">| TECH</span></a>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-cta">Volver al Inicio</a>
-            </div>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <nav class="nav" aria-label="Principal">
+        <div class="container">
+            <a class="brand" href="./"><img src="assets/img/icon-192.png" alt="" width="34" height="34">AMON</a>
+            <a class="btn btn-primary btn-small" href="./">Volver al inicio</a>
         </div>
     </nav>
 
-    <main class="legal-main">
+        <main id="contenido" class="doc">
         <div class="container">
-            
-            <header class="legal-header">
-                <h1>Especificaciones Técnicas</h1>
-                <p class="legal-date">Arquitectura & Stack Tecnológico v1.1.1</p>
-            </header>
+            <h1>Ficha técnica</h1>
+            <p class="updated">AMON: The Mystic Oracle · versión 1.0.1 · actualizado el 7 de noviembre de 2026</p>
 
-            <section class="section-dark" style="padding-top: 0;">
-                <div class="section-header">
-                    <h2>Core Technology</h2>
-                    <p>Desarrollado con un enfoque híbrido de alto rendimiento.</p>
-                </div>
+            <h2>Requisitos</h2>
+            <div class="table-wrap"><table>
+                <tr><th>Plataforma</th><th>Requisito</th><th>Estado</th></tr>
+                <tr><td>Android</td><td>Android 7.0 (API 24) o posterior</td><td><a href="https://play.google.com/store/apps/details?id=com.luiscaballero.amonoracle" target="_blank" rel="noopener">Google Play</a></td></tr>
+                <tr><td>iPhone</td><td>iOS 15.0 o posterior</td><td>Próximamente en App Store</td></tr>
+            </table></div>
+            <ul>
+                <li>Orientación vertical. Pensada para teléfono.</li>
+                <li>Permiso opcional: micrófono (y reconocimiento de voz en iPhone). Sin él, la app funciona igual.</li>
+                <li>Sin cuentas ni servidores propios: el progreso se guarda en el teléfono.</li>
+                <li>Idiomas: español, inglés, portugués, francés, alemán, ruso, indonesio, chino simplificado, japonés y coreano (según el idioma del teléfono).</li>
+            </ul>
 
-                <div class="features-grid">
-                    <div class="card glass">
-                        <div class="card-icon">⚡</div>
-                        <h3>Flutter 3.38.9</h3>
-                        <p>Framework principal para renderizado UI nativo, gestión de estado y navegación multiplataforma.</p>
-                    </div>
-                    <div class="card glass">
-                        <div class="card-icon">🔥</div>
-                        <h3>Flame Engine ^1.35</h3>
-                        <p>Motor de juego 2D integrado para el manejo del loop de juego, partículas y animaciones complejas.</p>
-                    </div>
-                    <div class="card glass">
-                        <div class="card-icon">🧠</div>
-                        <h3>Provider ^6.1</h3>
-                        <p>Arquitectura de inyección de dependencias y gestión de estado reactiva para la lógica de negocio.</p>
-                    </div>
-                    <div class="card glass">
-                        <div class="card-icon">🎙️</div>
-                        <h3>Speech Recognition</h3>
-                        <p>Integración nativa (speech_to_text ^7.3) para análisis de voz en tiempo real y triggering de eventos.</p>
-                    </div>
-                </div>
-            </section>
+            <h2>Contenido del juego</h2>
+            <div class="table-wrap"><table>
+                <tr><th>Elemento</th><th>Detalle</th></tr>
+                <tr><td>Entes</td><td>10, cada uno con su propia lista de respuestas. 1 inicial y 9 por cartas (50 a 200 cartas).</td></tr>
+                <tr><td>Bolas</td><td>10. 1 inicial y 9 por cartas (50 a 200).</td></tr>
+                <tr><td>Fondos</td><td>10. 1 inicial y 9 por cartas (50 a 150).</td></tr>
+                <tr><td>Cajas místicas</td><td>5 cartas por caja, con la misma probabilidad entre los objetos que aún no completas. Probabilidades visibles en la tienda.</td></tr>
+                <tr><td>Cajas gratis</td><td>1 de regalo al día y hasta 5 por hora con video.</td></tr>
+                <tr><td>Compras opcionales</td><td>Paquetes de 5, 30, 70, 160 y 500 cajas; «Eliminar anuncios» (compra única, se puede restaurar).</td></tr>
+                <tr><td>Anuncios</td><td>Google AdMob: banner, anuncio al abrir la app y video con recompensa opcional. Consentimiento de Google (UMP) y permiso de rastreo de Apple (ATT).</td></tr>
+                <tr><td>Compartir</td><td>Imagen de 1080 × 1350 con tu pregunta (opcional) y la respuesta del ente.</td></tr>
+            </table></div>
 
-            <div class="container narrow-container" style="margin-top: 4rem;">
-                <article class="legal-card fade-in-up">
-                    <div class="legal-body">
-                        <h2>Librerías & Módulos</h2>
-                        <p>Selección de paquetes optimizados para estabilidad y rendimiento en Android 10+.</p>
+            <h2>Tecnología</h2>
+            <div class="table-wrap"><table>
+                <tr><th>Parte</th><th>Tecnología</th></tr>
+                <tr><td>App</td><td>Flutter 3.47 (Dart 3.13)</td></tr>
+                <tr><td>Escena del oráculo</td><td>Flame 1.38: brillo de la bola con shader y partículas</td></tr>
+                <tr><td>Estado</td><td>provider</td></tr>
+                <tr><td>Voz a texto</td><td>speech_to_text 7.5 (reconocimiento de voz del sistema: Google en Android, Apple en iPhone)</td></tr>
+                <tr><td>Anuncios</td><td>google_mobile_ads 9.2 con User Messaging Platform; app_tracking_transparency en iPhone</td></tr>
+                <tr><td>Compras</td><td>in_app_purchase 3.3 (Google Play Billing 9.1 y StoreKit)</td></tr>
+                <tr><td>Audio</td><td>audioplayers 6.8: música por etapa (santuario, análisis, revelación y tienda)</td></tr>
+                <tr><td>Compartir</td><td>share_plus 13</td></tr>
+                <tr><td>Idiomas</td><td>flutter_localization, 10 idiomas</td></tr>
+                <tr><td>Datos locales</td><td>shared_preferences</td></tr>
+            </table></div>
 
-                        <h3>Monetización & Analytics</h3>
-                        <ul>
-                            <li><strong>google_mobile_ads ^7.0.0:</strong> Gestión de anuncios intersticiales y recompensados.</li>
-                            <li><strong>in_app_purchase ^3.2.3:</strong> Procesamiento seguro de transacciones digitales (Gacha system).</li>
-                        </ul>
-
-                        <h3>Multimedia & UX</h3>
-                        <ul>
-                            <li><strong>audioplayers ^6.5.1:</strong> Motor de audio para SFX y música ambiental dinámica.</li>
-                            <li><strong>animate_do ^4.2.0:</strong> Micro-animaciones para feedback visual en UI.</li>
-                            <li><strong>flutter_localization ^0.3.3:</strong> Soporte i18n para internacionalización.</li>
-                        </ul>
-
-                        <h3>Utilidades del Sistema</h3>
-                        <ul>
-                            <li><strong>shared_preferences ^2.5.4:</strong> Persistencia de datos local ligera (progreso, unlocks).</li>
-                            <li><strong>url_launcher ^6.3.2:</strong> Gestión de enlaces externos y políticas.</li>
-                            <li><strong>package_info_plus ^9.0.0:</strong> Control de versiones y metadatos del build.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <div class="container narrow-container" style="margin-top: 4rem;">
-                <div class="section-header">
-                    <h2>Arquitectura del Proyecto</h2>
-                    <p>Estructura escalable basada en "Feature-First".</p>
-                </div>
-
-                <article class="legal-card fade-in-up">
-                    <div class="legal-body">
-                        <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.2); font-family: monospace; font-size: 0.9rem; color: #a8a8a8; overflow-x: auto;">
-<pre>
-lib/
-├── main.dart                  # Entry Point & Providers Setup
-├── config/
-│   ├── theme/                 # Paleta de colores y estilos globales
-│   └── routes/                # Mapa de navegación
-├── core/
-│   ├── constants/             # Strings, Assets Paths
-│   └── utils/                 # Helpers (AudioPlayer, Haptic)
-├── data/
-│   ├── datasources/           # Local Storage & API Mockups
-│   └── repositories/          # Implementación de repositorios
-├── domain/
-│   ├── entities/              # Modelos (OracleEntity, Item)
-│   └── usecases/              # Lógica de negocio pura
-└── presentation/
-    ├── widgets/               # Componentes reutilizables (Buttons, Loaders)
-    └── screens/
-        ├── oracle/            # Lógica del Oráculo (Voice/Flame)
-        ├── shop/              # Gacha System & IAP
-        ├── collection/        # Grid de Entes desbloqueados
-        └── settings/          # Configuración y Legal
-</pre>
-                        </div>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
-                            La arquitectura separa la capa de presentación (Flutter Widgets) de la lógica del juego (Flame Components) y la capa de datos, permitiendo escalabilidad y testeo unitario eficiente.
-                        </p>
-                    </div>
-                </article>
-            </div>
-
+            <h2>Identificadores</h2>
+            <ul>
+                <li>Paquete Android y bundle iOS: <code>com.luiscaballero.amonoracle</code></li>
+                <li>Desarrollador: Luis Angel Caballero Jardon · <a href="mailto:amon.soporte@gmail.com">amon.soporte@gmail.com</a></li>
+            </ul>
         </div>
     </main>
 
     <footer>
-        <div class="container footer-content">
-            <div class="footer-copy">
-                <p>&copy; 2026 Amon Oracle. Todos los derechos reservados.</p>
-                <p style="font-size: 0.8rem; color: #444; margin-top: 5px;">Built with Flutter & Flame.</p>
+        <div class="container">
+            <p>&copy; 2026 AMON · The Mystic Oracle.</p>
+            <div class="footer-links">
+                <a href="./">Inicio</a>
+                <a href="privacy.html">Privacidad</a>
+                <a href="terms.html">Términos</a>
+                <a href="techspecs.html">Ficha técnica</a>
+                <a href="presskit.html">Press kit</a>
             </div>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.fade-in-up').forEach(el => {
-                el.classList.add('visible');
-            });
-        });
-    </script>
 </body>
 </html>
