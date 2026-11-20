@@ -1,8 +1,8 @@
 // AMON: animaciones de entrada y botón de descarga inteligente.
 (function () {
-  // Cuando AMON esté publicada en App Store, cambiar IOS_LIVE a true (y quitar las insignias "Próximamente").
-  var IOS_LIVE = false;
-  var IOS_URL = 'https://apps.apple.com/app/id6832035933';
+  // AMON ya está en App Store y Google Play.
+  var IOS_LIVE = true;
+  var IOS_URL = 'https://apps.apple.com/us/app/amon-the-mystic-oracle/id6832035933';
   var ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.luiscaballero.amonoracle';
 
   var ua = navigator.userAgent || '';
